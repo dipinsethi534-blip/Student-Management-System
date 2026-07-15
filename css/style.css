@@ -1,0 +1,73 @@
+/*
+    style.css
+    ----------
+    Small set of custom styles that sit on top of Bootstrap 5.
+    We keep this minimal on purpose — Bootstrap already handles
+    most of the responsive layout for us.
+*/
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Custom navbar color instead of Bootstrap's default */
+.custom-navbar {
+    background-color: #2c3e50;
+}
+
+/* Login page: center the login card vertically and horizontally */
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+}
+
+.login-card {
+    max-width: 400px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Dashboard summary cards */
+.dashboard-card {
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card .card-icon {
+    font-size: 2.5rem;
+    opacity: 0.7;
+}
+
+.bg-card-blue   { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.bg-card-green  { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+.bg-card-orange { background: linear-gradient(135deg, #fa709a, #fee140); }
+
+/* Table tweaks */
+.table-responsive {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Form card used on add/edit student pages */
+.form-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Highlight invalid fields (used together with Bootstrap's is-invalid) */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
