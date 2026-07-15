@@ -4,7 +4,8 @@
     ---------------
     The main landing page after login. Shows a few quick statistics
     (total students, total courses, total semesters in use) fetched
-    from the database.
+    from the database.dashboard is for seeing activities and content 
+    colleges gives us
 */
 
 require_once 'includes/auth_check.php';   // must be logged in
