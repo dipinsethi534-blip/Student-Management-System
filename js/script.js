@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Are you sure you want to delete " + studentName + "? This action cannot be undone."
             );
             if (!confirmDelete) {
-                // Cancel the delete if the user clicks "Cancel"
+                // Cancel the delete if the user clicks "Cancel".
                 event.preventDefault();
             }
         });
